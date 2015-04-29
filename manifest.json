@@ -1,0 +1,56 @@
+{
+	"extension": 
+	{
+		"name": "JavaScript Beautifier",
+		"version": "1.0.0",
+		"description": "Beautify you JavaScript",
+		"icon": "beautify.png",
+		
+		"senders": [
+					{
+						"location": "codeEditorToolbar", 
+						"title": "Beautifier",
+						"icon": "beautify.png",
+						"tips": "JavaScript Beautifier",
+						"menu": [
+							{"actionName": "beautify"},
+							{"separator": {} },
+							{"actionName": "settings"},
+							{"actionName": "doAbout"}
+						]
+					}
+		],
+		
+		"actions": [
+					{
+						"name": "beautify",
+						"title": "Beautify",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" },
+							{ "uti": "public.html" },
+							{ "uti": "com.4d.wakanda.json" }
+						]
+					},
+					{
+						"name": "settings",
+						"title": "Settings...",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" },
+							{ "uti": "public.html" },
+							{ "uti": "com.4d.wakanda.json" }
+						]
+					},
+					{
+						"name": "doAbout",
+						"title": "About...",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" },
+							{ "uti": "public.html" },
+							{ "uti": "com.4d.wakanda.json" }
+						]
+					}
+		],
+		
+		"lifetime": "application_lifetime"
+	}
+}
